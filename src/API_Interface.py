@@ -10,12 +10,12 @@ import urllib.request
 import json
 
 class API_Interface:
-    api_key = "/a309444bd6a6e4db"
+    api_key = "/a309444bd6a6e4db"   #Personal key
     base_url = "http://api.wunderground.com/api"
     request_string = "/q"
     end_string = ".json"
     DEFAULT_FEATURE = "/conditions/astronomy"
-    DEFAULT_LOCATION = "/pws:KNJWESTW4"
+    DEFAULT_LOCATION = "/pws:KNJWESTW4" #Weather station next to HSS
 
     def __init__(self, location_string = "/pws:KNJWESTW4", feature_string = "/conditions/astronomy"):
         self.location_string = location_string
